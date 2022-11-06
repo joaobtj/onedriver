@@ -8,9 +8,6 @@
 #' @importFrom curl curl_download
 #'
 #' @export
-#' @examples
-#' url <- "https://1drv.ms/x/s!AvKSrDD28Jp5q-MDRzpOYGOMSTtmqg?e=kMpWaa"
-#' onedriver_excel(url, file_name = "example.xlsx")
 #'
 onedriver_excel <- function(sharedURL, file_name, save2wd = FALSE) {
 

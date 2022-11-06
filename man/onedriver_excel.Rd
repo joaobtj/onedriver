@@ -16,8 +16,3 @@ onedriver_excel(sharedURL, file_name, save2wd = FALSE)
 \description{
 Onedrive Excel
 }
-\examples{
-url <- "https://1drv.ms/x/s!AvKSrDD28Jp5q-MDRzpOYGOMSTtmqg?e=kMpWaa"
-onedriver_excel(url, file_name = "example.xlsx")
-
-}

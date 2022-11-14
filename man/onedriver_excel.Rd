@@ -4,10 +4,10 @@
 \alias{onedriver_excel}
 \title{Onedrive Excel}
 \usage{
-onedriver_excel(sharedURL, file_name, save2wd = FALSE)
+onedriver_excel(shared_url, file_name, save2wd = FALSE)
 }
 \arguments{
-\item{sharedURL}{shared link from OneDrive excel file}
+\item{shared_url}{Excel file shared link on onedrive}
 
 \item{file_name}{Local file name}
 
@@ -15,4 +15,9 @@ onedriver_excel(sharedURL, file_name, save2wd = FALSE)
 }
 \description{
 Onedrive Excel
+}
+\examples{
+url <- "https://ufscbr-my.sharepoint.com/:x:/g/personal/joao_tolentino_ufsc_br/EZaB18_ZxhVGrwsuVsv83c4BsKk3r3jp3r-KEZmWITscGQ?e=aKMKiD"
+onedriver_excel(url, file_name = "exemplo.xlsx")
+
 }

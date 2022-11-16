@@ -24,7 +24,6 @@ onedriver_excel <- function(shared_url, file_name, save2wd = FALSE) {
     mode = "wb"
   )
 
-
   # If the user wants it saved to thier working directory this will copy the file
   if (isTRUE(save2wd)) {
     file.copy(
@@ -32,6 +31,8 @@ onedriver_excel <- function(shared_url, file_name, save2wd = FALSE) {
       to = "./"
     )
   }
-  # return the CSV as a data.frame
-  return(readxl::read_excel(paste0(tempdir(), "\\", file_name)))
+
+  # return the excel file as a data.frame
+  file_path <- normalizePath(file.path(tempdir(), file_name))
+  return(readxl::read_excel(file_path))
 }
